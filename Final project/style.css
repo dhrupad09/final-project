@@ -188,7 +188,7 @@ h1::after
     height: 25px;
     width: 25px;
     color: #007bff !important;
-    background: #fff;
+    background: rgb(250, 249, 249);
     padding: 4px;
     border-radius: 50px;
 }
