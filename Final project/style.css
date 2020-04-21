@@ -330,3 +330,14 @@ blockquote::after
     color: #999 !important;
 }
 /*----footer----*/
+#footer
+{
+    background: #333;
+    color: #fff;
+    padding: 12px;
+}
+.fa-copyright
+{
+    margin: 3px;
+    color:white;
+}

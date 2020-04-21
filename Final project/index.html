@@ -28,28 +28,28 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#promo">Link</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Github</a>
-                    <a class="dropdown-item" href="#">Python</a>
+                    <a class="dropdown-item" href="#services">Github</a>
+                    <a class="dropdown-item" href="#services">Python</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">SQL</a>
+                    <a class="dropdown-item" href="#services">SQL</a>
                     
                   </div>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contact">Contact Us</a>
                   </li>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              
             </div>
           </nav>
     </section>
@@ -214,11 +214,11 @@
 </div>
           </div>
       </section>
-      <!---promp-->
+      <!---promo-->
       <section id="promo">
         <div class="container">
           <p>For more links and tutorial</p>
-          <a href="#" class="btn btn-primary">contact us</a>
+          <a href="#contact" class="btn btn-primary">contact us</a>
         </div>
       </section>
       <!---Testimonials-->
@@ -266,7 +266,11 @@
           <p><i class="fa fa-copyright" aria-hidden="true"></i> 2020. Built using VSCode</p>
         </div>
       </section>
-      
+      <!---footer end-->
+      <script src="js/smooth-scroll.js"></script>
+      <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+      </script>
 
 </body>
 </html>
