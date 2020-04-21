@@ -303,3 +303,30 @@ blockquote::after
     cursor: pointer;
     transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+/*----Get in Touch----*/
+#contact
+{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    color: #777;
+
+}
+.contact-form
+{
+    padding: 15px;
+    padding-left: 200px;
+    
+}
+.form-control
+{
+    border-radius: 0 !important;
+    border: none !important;
+
+}
+::placeholder
+{
+    color: #999 !important;
+}
+/*----footer----*/
