@@ -28,11 +28,11 @@
 }
 #nav-bar ul li a:hover
 {
-    color: rgba(80, 96, 100, 0.589)!important;
+    color: rgba(247, 248, 248, 0.589)!important;
 }
 .navbar
 {
-    background: rgba(110, 122, 128, 0.877);
+    background: rgba(126, 126, 126, 0.877);
 }
 .navbar-toggler
 {
@@ -79,7 +79,7 @@ margin-bottom: 30px;
 /*---Services---*/
 #services
 {
-    background-image: linear-gradient(rgba(27, 25, 25, 0.8),rgba(117, 108, 108, 0.8)),url(footer);
+    background-image: linear-gradient(rgba(27, 25, 25, 0.8),rgba(117, 108, 108, 0.8)),url(footer.png);
     background-size: cover;
     background-position: center;
     color: #efefef !important;
@@ -215,10 +215,10 @@ h1::after
 {
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
-/*----promo*/
+/*----promo---*/
 #promo
 {
-    background-image: linear-gradient(rgba(0,0,0.7),rgba(0,0,0.7)),url(footer.jpg);
+    background-image: linear-gradient(rgba(0,0,0.7),rgba(0,0,0.7)),url(footer2.png);
     background-size: cover;
     background-position: center;
     color: #fff;
