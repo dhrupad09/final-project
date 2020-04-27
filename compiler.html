@@ -50,7 +50,7 @@ function setupEditor()
   editor.setTheme("ace/theme/monokai");
   editor.getSession().setMode("ace/mode/html");
   editor.setValue(`<!DOCTYPE html>
-  
+<html>
   `,1); //1 = moves cursor to end
 
   editor.getSession().on('change', function() {
