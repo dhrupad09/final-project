@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+    </style>
+</head>
+<body>
+   <!-- .hero -->
+     <section class = "hero has-backgorund-black">
+         <div class="hero-body">
+             <div class="container">
+                 <h1 class="title">time2learn</h1>
+             </div>
+         </div>
+     </section>
+   <!-- /.hero -->
+
+   <!-- /.section -->
+   <section class="section">
+         <div class="container">
+              <div class="columns">
+                   <div class="column">
+                        <div class="notification is-info">
+                            <p class="is-size-5">
+                                time2learn provides tutorials on html
+                                HTML is the standard markup language for Web pages.
+                                With HTML you can create your own Website.
+                            </p>
+                        </div>
+                   </div>
+                   <div class="column">
+                        <div class="notification is-primary">
+                            <p class="is-size-5">
+                                time2learn provides tutorials on github
+                                SQL is a standard language for storing, manipulating and retrieving data in databases.
+                                Our SQL tutorial will teach you how to use SQL in: MySQL, SQL Server
+                                MS Access, Oracle, Sybase, Informix, Postgres, and other database systems.
+
+                             </p>
+                        </div>
+                   </div>
+                   <div class="column">
+                        <div class="notification is-warning">
+                            <p class="is-size-5">
+                                time2learn provides tutorials on python
+                                Python is a programming language.
+                                Python can be used on a server to create web applications.
+                            </p>
+                        </div>
+                   </div>
+              </div>
+         </div>
+   </section>
+   <!-- /.section -->
+</body>
+</html>
+{% endblock %}
