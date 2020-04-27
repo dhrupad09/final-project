@@ -1,8 +1,47 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <style>
+.box{
+    width: 375px;
+    height: 420px;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+    outline-color: transparent;
+    box-shadow: none;
+}
+.button {
+    position: absolute;
+        cursor: pointer;
+    width: 60%;
+    margin-left: 60px;
+    background: transparent;
+    height: 45px;
+    color: rgb(255, 174, 0);
+    font-size: large;
+    font-family: "Arial Rounded MT Bold";
+    font-weight: bold;
+    border-radius: 20px;
+    top:73%;
+    left:5%
+    }
+    .button:hover{
+       width: 60%;
+    margin-left: 60px;
+    background: rgb(138, 94, 0);
+    height: 50px;
+    color: white;
+    font-size: larger;
+    }
+
+</style>
+
 <div class="column is-4 is-offset-4">
-    <h3 class="title">Sign Up</h3>
     <div class="box">
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -12,11 +51,6 @@
         {% endif %}
         {% endwith %}
         <form method="POST" action="/signup">
-            <div class="field">
-                <div class="control">
-                    <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="">
-                </div>
-            </div>
 
             <div class="field">
                 <div class="control">
@@ -26,11 +60,18 @@
 
             <div class="field">
                 <div class="control">
+                    <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="">
+                </div>
+            </div>
+
+
+            <div class="field">
+                <div class="control">
                     <input class="input is-large" type="password" name="password" placeholder="Password">
                 </div>
             </div>
 
-            <button class="button is-block is-info is-large is-fullwidth">Sign Up</button>
+            <button class="button">Sign Up</button>
         </form>
     </div>
 </div>
