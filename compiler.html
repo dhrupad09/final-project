@@ -49,7 +49,9 @@ function setupEditor()
   window.editor = ace.edit("editor");
   editor.setTheme("ace/theme/monokai");
   editor.getSession().setMode("ace/mode/html");
-  editor.setValue(``,1); //1 = moves cursor to end
+  editor.setValue(`<!DOCTYPE html>
+  
+  `,1); //1 = moves cursor to end
 
   editor.getSession().on('change', function() {
     update();
