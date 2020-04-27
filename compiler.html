@@ -37,7 +37,11 @@
 <script>
 function update()
 {
+    var idoc = document.getElementById('iframe').contentWindow.document;
 
+	idoc.open();
+	idoc.write(editor.getValue());
+	idoc.close();
 }
 
 function setupEditor()
