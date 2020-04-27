@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Techademy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="../images/logo1.jpg">
+                <h1>TechAdmey</h1>
+                <h2>Eat.Sleep.Code</h2>    
+            
+            </div>
+            <ul id="navbar">
+                <li><a href="">Home</a></li>
+                
+                <li class="dropdown">
+                    <a class="dropbtn" href="javascript:void(0)">My Courses<i class="fa fa-caret-down"></i></a>
+                    
+                    <div class="dropdown-content">
+                        <a href="#">Git</a>
+                        <a href="#">Javascripts</a>
+                        <a href="#">SQL</a>
+                    </div>
+                </li>
+                <li><a href="">Contact Us</a></li>
+                <li class="dropdown2">
+                    <a class="dropbtn2" href="javascript:void(0)">My Profile<i class="fa fa-caret-down"></i></a>
+                    
+                    <div class="dropdown2-content">
+                        <a href="#">Account</a>
+                        <a href="#">Log out</a>
+                    </div>
+                    
+                </li>
+                
+            </ul>
+            <div class="title">
+                <h1><u>What is python?</u></h1>
+                <img src="../images/1073.png">
+                <p>By far, the most widely used modern<br>
+                    version control system in the world today<br>
+                     is Git. Git is a mature, actively maintained<br>
+                     open source project originally developed in<br> 
+                    2005 by Linus Torvalds, the famous creator of<br>
+                     the Linux operating system kernel. A staggering<br>
+                     number of software projects rely on Git for <br>
+                    version control, including commercial projects as<br>
+                     well as open source. Developers who have worked<br>
+                     with Git are well represented in the pool of available<br>
+                     software development talent and it works well on a<br>
+                     wide range of operating systems and IDEs (Integrated <br>
+                    Development Environments).
+                </p>
+                    </div>   
+                    <div class="download">
+                        <h2><i class="fab fa-github"></i>Open & Download the <a href="../images/gittutorial.pdf">step-by-step tutorial<i class="fas fa-download"></i></a></h2>
+                    
+                    </div>
+            
+            </div>
+        <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+        
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+        
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+        
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        } 
+        function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+        </script>
+    </header>
+</body>
+</html>
