@@ -5,53 +5,56 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Flask Login Sample</title>
+    <title>Techademy</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
 </head>
 
 <body>
-    <section class="hero is-primary is-fullheight has-background-black">
-
-        <div class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-
-                    <div id="navbarMenuHeroA" class="navbar-menu">
-                        <div class="navbar-end">
-                            <a href="{{ url_for('main.index') }}" class="navbar-item">
-                                Home
-                            </a>
-                            {% if current_user.is_authenticated %}
-                            <a href="{{ url_for('main.profile') }}" class="navbar-item">
-                                Profile
-                            </a>
-                            {% endif %}
-                            {% if not current_user.is_authenticated %}
-                            <a href="{{ url_for('auth.login') }}" class="navbar-item">
-                                Login
-                            </a>
-                            <a href="{{ url_for('auth.signup') }}" class="navbar-item">
-                                Sign Up
-                            </a>
-                            {% endif %}
-                            {% if current_user.is_authenticated %}
-                            <a href="{{ url_for('auth.logout') }}" class="navbar-item">
-                                Logout
-                            </a>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <div class="hero-body">
-            <div class="container has-text-centered">
-               {% block content %}
-               {% endblock %}
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="../static/images/logo1.jpg">
+            <h1>TechAdmey</h1>
+            <h2>Eat.Sleep.Code</h2>
+                <style>
+        h1 {
+    font-size: xx-large;
+    font-style: unset;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(248, 163, 51);
+    position: absolute;
+    top: 2.5%;
+    left: 8%;
+}
+</style>
             </div>
-        </div>
-    </section>
-</body>
+            <ul>
+            <li><a href="{{ url_for('main.index') }}">
+                                About Us
+                            </a></li>
+                {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('main.profile') }}">Home</a></li>
+                {% endif %}
+                            {% if not current_user.is_authenticated %}
+                            <li><a href="{{ url_for('auth.login') }}">
+                                Login
+                            </a></li>
+                            <li><a href="{{ url_for('auth.signup') }}">
+                                Sign Up
+                            </a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            {% endif %}
+                            {% if current_user.is_authenticated %}
+                            <li><a href="{{ url_for('auth.logout') }}" class=>
+                                Logout
+                            </a></li>
+                {% endif %}
 
+            </ul>
+        </div>
+{% block content %}
+               {% endblock %}
+    </header>
+</body>
 </html>
