@@ -4,7 +4,7 @@
 #### Team member
 1. Rohit Kabra
 2. Dhrupad Solanki
-3. Brij Thota
+3. Brij Bhushan Thota
 4. Ajay Kumar Selvaraj Rajagopal
 #### Project Name: Techademy
 ##### Project Description:
