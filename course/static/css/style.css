@@ -163,7 +163,9 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-color: rgb(250, 244, 237) ;
+    background-color: rgb(250, 244, 237);
+    margin: 0;
+    padding: 0;
 }
 .title h1{
     position: absolute;
@@ -172,6 +174,17 @@ body {
     transform: translate(-50%,-50%);
     font-family: Copperplate;
     font-size: 60px;
+    font-weight: lighter;
+    color: rgb(54, 53, 50);
+    font-variant: small-caps;
+}
+.title a{
+  position: absolute;
+    top: 28%;
+    left: 31%;
+    transform: translate(-50%,-50%);
+    font-family: Copperplate;
+    font-size: 20px;
     font-weight: lighter;
     color: rgb(54, 53, 50);
     font-variant: small-caps;
@@ -187,19 +200,20 @@ body {
 
 .title p{
     position: absolute;
-    top: 35%;
+    top: 45%;
     left:5%;
     font-style: normal;
     font-family: helvetica;
     font-size: 30px;
     }
 
-#download{
+.download{
     position: absolute;
-    top: 15%;
-    left: 40%;
-    font-weight: 700;
+    top: 35%;
+    left: 5%;
+    font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
+    color: rgb(150, 102, 0);
 
 }
   
