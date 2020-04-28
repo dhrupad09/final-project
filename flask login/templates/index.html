@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <style>
+.content h1{
+    position: absolute;
+    top: 25%;
+    left:5%;
+    font-style: normal;
+    font-family: "Arial Black";
+    font-size: 45px;
+    color: white;
+    }
+    .content p{
+        position: absolute;
+    top: 35%;
+    left:5%;
+    font-style: normal;
+    font-family: helvetica;
+    font-size: 30px;
+    }
+    .form-box{
+        Position: absolute;
+        top: 50%;
+        left:5%;
+    }
+    .search-field{
+        height: 50px;
+        padding: 10px;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+        font-size: x-large;
+    }
+    .business{
+        width: 650px;
+    }
+    .search-btn {
+        height: 50px;
+        width: 150px;
+        border: none;
+        color: white;
+        background: transparent;
+        font-size: large;
+        border-radius: 25px;
+        top: 50%;
+        left:42%;
+        font-size: 25px;
+    }
+    .search-btn:hover{
+        background: darkgrey;
+        color:white;
+        cursor: pointer;
+    }
+    </style>
+
+<div class="content">
+<h1><b>Learn on your Schedule</b></h1>
+<p>Study any topic, anytime. Choose from a <br>wide range of tutorials. </p>
+<div class="form-box">
+    <input type="text" class="search-field business"
+           placeholder="Search for a Course"><i class="fa fa-search"></i>
+<button class="search-btn"
+    type="button">Search</button>
+</div>
+
+</div>
+{% endblock %}
