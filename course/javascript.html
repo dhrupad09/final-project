@@ -3,20 +3,241 @@
     <head>
         <title>Techademy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
+<style>
+    Header {
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(250, 244, 237);
+}
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    padding: 5px 20px;
+    border: coral;
+    transition: 0.6s ease;
+}
+ul li a.active {
+	background-color: white;
+    color: black;
+}
+
+ul li, a.dropbtn {
+    background-color:transparent;
+    font-family: century gothic;
+    color:black;
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    min-width: 160px;
+    box-shadow: 0px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color:black;
+    font-weight: 600;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(150, 102, 0);
+    color: white
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+      padding: 6px;
+ }
+  
+  .dropdown:hover .dropbtn {
+      background-color:rgb(255, 197, 73);
+    color: black;
+ }
+
+    .dropbtn2 {
+        background-color:transparent;
+        font-family: century gothic;
+        color: black;
+        padding: 7px;
+        font-size: 16px;
+        border: none;
+ }
+      
+      .dropdown2 {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown2-content {
+        display: none;
+        position: absolute;
+        background-color:transparent;
+        min-width: 160px;
+        box-shadow: 0px;
+        z-index: 1;
+      }
+      
+      .dropdown2-content a {
+        color:black;
+        padding: 12px;
+        text-decoration: none;
+        display: block;
+        margin: 5px;
+      }
+      
+      .dropdown2-content a:hover {
+        background-color:rgb(150, 102, 0);
+        color: black;
+    }
+      
+      .dropdown2:hover .dropdown2-content {display: block;
+    Padding: 6px;
+}
+      
+      .dropdown2:hover .dropbtn2 {
+          background-color:rgb(255, 197, 73);
+        color: black;}
+ul li a:hover {
+    background-color: rgb(255, 197, 73);
+    color: black;
+}
+
+.logo img {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-top: 0.5cm;
+    border-radius: 40px;
+}
+.logo h1{
+    font-size: xx-large;
+    font-style: unset;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(248, 163, 51);
+    position: absolute;
+    top: 2.5%;
+    left: 8%;
+}
+.logo h2{
+    font-size: large;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 197, 73);
+    position: absolute;
+    top: 8%;
+    left: 8.3%;
+
+}
+
+.main {
+    max-width: 1500px;
+    margin: auto;
+}
+
+body {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(250, 244, 237);
+    margin: 0;
+    padding: 0;
+}
+.title h1{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    font-family: Copperplate;
+    font-size: 60px;
+    font-weight: lighter;
+    color: rgb(54, 53, 50);
+    font-variant: small-caps;
+}
+.title a{
+  position: absolute;
+    top: 28%;
+    left: 42%;
+    transform: translate(-50%,-50%);
+    font-family: Copperplate;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(54, 53, 50);
+    font-variant: small-caps;
+}
+
+.title img{
+    position: relative;
+    top: 10%;
+    Left: 55%;
+    margin-top: 6cm;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.title p{
+    position: absolute;
+    top: 45%;
+    left:5%;
+    font-style: normal;
+    font-family: helvetica;
+    font-size: 30px;
+    }
+
+.download{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(150, 102, 0);
+
+}
+  
+
+</style>
 
 <body>
     <header>
         <div class="main">
             <div class="logo">
-                <img src="../images/logo1.jpg">
+                <img src="images/logo1.jpg">
                 <h1>TechAdmey</h1>
                 <h2>Eat.Sleep.Code</h2>    
             
@@ -28,9 +249,9 @@
                     <a class="dropbtn" href="javascript:void(0)">My Courses<i class="fa fa-caret-down"></i></a>
                     
                     <div class="dropdown-content">
-                        <a href="#">Git</a>
-                        <a href="#">Python/a>
-                        <a href="#">SQL</a>
+                        <a href="github.html">Git</a>
+                        <a href="python.html">Python</a>
+                        <a href="sql.html">SQL</a>
                     </div>
                 </li>
                 <li><a href="">Contact Us</a></li>
@@ -48,7 +269,7 @@
             <div class="title">
                 <h1><u>What is JavaScript?</u></h1>
                 <a href="#">Try it yourself>></a>
-                <img src="../images/Javascript.png">
+                <img src="images/Javascript.png">
                 <p>By far, the most widely used modern<br>
                     version control system in the world today<br>
                      is Git. Git is a mature, actively maintained<br>
@@ -65,7 +286,7 @@
                 </p>
                     </div>   
                     <div class="download">
-                        <h2><i class="fab fa-github"></i>Open & Download the <a href="../images/gittutorial.pdf">step-by-step tutorial<i class="fas fa-download"></i></a></h2>
+                        <h2>Open & Download the <a href="images/gittutorial.pdf">step-by-step tutorial</a></h2>
                     
                     </div>
             
