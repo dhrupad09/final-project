@@ -15,7 +15,6 @@
 {
     height: 40px;
     padding-left: 30px;
-    border-radius: 25%;
 }
 .navbar-nav li
 {
@@ -80,7 +79,7 @@ margin-bottom: 30px;
 /*---Services---*/
 #services
 {
-    background-image: linear-gradient(rgba(27, 25, 25, 0.8),rgba(117, 108, 108, 0.8)),url(../images/footer.png);
+    background-image: linear-gradient(rgba(27, 25, 25, 0.8),rgba(117, 108, 108, 0.8)),url(footer.png);
     background-size: cover;
     background-position: center;
     color: #efefef !important;
@@ -128,61 +127,52 @@ padding-bottom: 10px;
     background: #555;
     cursor: pointer;
     transition: cubic-bezier(0.77, 0, 0.175, 1);
+
+}
+/*---features----*/
+.feature
+{
+    margin: 200px 0;
+}
+.feature img
+{
+    max-width: 77%;
+    cursor: pointer;
+}
+.feature h2
+{
+    margin-top: 100px;
+    font-weight: bold;
+    line-height: 50px;
 }
 
-/*---Courses---*/
-#courses
+.feature a
 {
-    background-image: linear-gradient(rgba(27, 25, 25, 0.8),rgba(117, 108, 108, 0.8)),url(../images/footer2.png);
+    width: 170px;
+    padding: 15px 10px;
+    display: block;
+    background: #2600d1;
+    text-decoration: none !important;
+    color: #fff !important;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 9px 9px 1px rgba(204,204,204,0.5);
+}
+/*----promo---*/
+#promo
+{
+    background-image: linear-gradient(rgba(0,0,0.7),rgba(0,0,0.7)),url(footer2.png);
     background-size: cover;
     background-position: center;
-    color: #efefef !important;
+    color: #fff;
     background-attachment: fixed;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
 }
-#Courses h1
-{
-text-align: center;
-color: #555 !important;
-padding-bottom: 10px;
-}
-#Courses h1::after
-{
-   content: '';
-    background: #007bff;
-  display: block;
-  height: 3px;
-  width: 170px;
-  margin: 20px auto 5px;
-}
-.Courses
-{
-    margin-top: 40px;
-}
-.icon
-{
-    font-size: 40px;
-    margin: 20px auto;
-    padding: 20px;
-    height: 80px;
-    width: 80px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-}
-#Courses p
-{
-    font-size: 14px;
-    margin-top: 20px;
-    color: #ccc;
-
-}
-.Courses .col-md-3:hover{
-    background: #555;
-    cursor: pointer;
-    transition: cubic-bezier(0.77, 0, 0.175, 1);
-}
-
 /*---Team Menmers---*/
 #team
 {
@@ -270,19 +260,8 @@ h1::after
 {
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
-/*----promo---*/
-#promo
-{
-    background-image: linear-gradient(rgba(0,0,0.7),rgba(0,0,0.7)), url(../images/footer.png);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    background-attachment: fixed;
-    text-align: center;
-    padding: 100px;
-    font-family: sans-serif;
-    font-size: 38px;
-}
+
+
 /*----Get in Touch----*/
 #contact
 {

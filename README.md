@@ -32,9 +32,11 @@ Techademy is a web blog page that gives a detailed description and a step by ste
 
 - [X] User can view the list of all the tutorials available.
 
-- [] Admin/Developers should be able to  add the contents of the website aka the tutorials.
+- [ ] Admin should be able to login using his unique credentials.
 
-- [] Admins can create, edit and post the contents later as well.
+- [ ] Admin/Developers should be able to  add the contents of the website aka the tutorials.
+
+- [ ] Admins can create, edit and post the contents later as well.
 
 
 
