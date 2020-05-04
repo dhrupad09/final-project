@@ -40,9 +40,10 @@ def signup():
 @auth.route('/signup', methods=['POST'])
 def signup_post():
     # code to validate and add user to database goes here
-    email = request.form.get('email')
-    name = request.form.get('name')
+    Firstname = request.form.get('Firstname')
+    Lastname = request.form.get('Lastname')
     username = request.form.get('username')
+    email = request.form.get('email')
     password = request.form.get('password')
 
     user = User.query.filter_by(
@@ -53,7 +54,7 @@ def signup_post():
         return redirect(url_for('auth.signup'))
 
     # create new user with the form data. Hash the password so plaintext version isn't saved.
-    new_user = User(username=username, email=email, name=name, password=generate_password_hash(password, method='sha256'))
+    new_user = User(username=username, email=email, Firstname=Firstname, Lastname=Lastname, password=generate_password_hash(password, method='Sha256'))
 
     # add the new user to the database
     db.session.add(new_user)
