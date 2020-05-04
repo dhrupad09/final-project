@@ -7,4 +7,6 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(100), unique=True)
     username = db.Column(db.String(100), unique=True)
     password = db.Column(db.String(100))
-    name = db.Column(db.String(64))
+    Firstname = db.Column(db.String(64))
+    Lastname= db.Column(db.String(64))
+    name= db.Column(db.String(64))
