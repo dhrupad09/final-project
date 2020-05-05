@@ -2,8 +2,8 @@
 ## Final Project
 ### Team Name: DataPirates
 #### Team member
-1. Rohit Kabra
-2. Dhrupad Solanki
+1. Dhrupad Solanki
+2. Rohit Kabra
 3. Brij Bhushan Thota
 4. Ajay Kumar Selvaraj Rajagopal
 #### Project Name: Techademy
