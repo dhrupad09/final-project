@@ -64,42 +64,36 @@ def home():
 def admin():
     form = ContentForm()
     if form.validate_on_submit():
-        techademy = Techademy(
-            python=form.python.data,
-            github=form.github.data,
-            java=form.java.data
-        )
-        db.session.add(techademy)
-        try:
+            techademy = Techademy(
+                category=form.category.data,
+                title=form.title.data,
+                content=form.content.data
+            )
+            db.session.add(techademy)
             db.session.commit()
             flash("Successfully Added")
-        except IntegrityError as err:
-            db.session.rollback()
-            if "UNIQUE constraint failed" in str(err):
-                flash("error")
-            else:
-                flash("unknown error adding contents")
-    else:
-        flash("Add Contents")
-    return render_template("admin.html", form=form, title="Admin")
+    return render_template("Admin.html", form=form, title="Admin")
 
 
 @users_bp.route('/python')
 @login_required
 def python():
-    return render_template("python.html", python=python, title="Python")
+    rows = Techademy.query.filter_by(category="python")
+    return render_template("python.html", rows=rows, title="Python")
 
 
 @users_bp.route('/github')
 @login_required
 def github():
-    return render_template("github.html", github=github, title="Github")
+    rows = Techademy.query.filter_by(category="github");
+    return render_template("github.html", rows=rows, title="Github")
 
 
 @users_bp.route('/java')
 @login_required
 def java():
-    return render_template("java.html", java=java, title="JavaScript")
+    rows = Techademy.query.filter_by(category="javascript")
+    return render_template("java.html", rows=rows, title="JavaScript")
 
 
 @users_bp.route('/compiler')
