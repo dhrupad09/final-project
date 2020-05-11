@@ -19,7 +19,7 @@ class LoginForm(FlaskForm):
 
 
 class ContentForm(FlaskForm):
-    java = StringField('Java', render_kw={'class': 'form-control'})
-    github = StringField('Github', render_kw={'class': 'form-control'})
-    python = StringField('Python', render_kw={'class': 'form-control'})
+    title = StringField('Title', render_kw={'class': 'form-control'})
+    category = StringField('Category', render_kw={'class': 'form-control'})
+    content = StringField('Content', render_kw={'class': 'form-control'})
     submit = SubmitField('Submit', render_kw={'class': 'form-control'})
