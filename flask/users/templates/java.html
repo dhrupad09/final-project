@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+
+{% block content %}
 <body>
     <style>
         *
@@ -215,25 +217,7 @@ padding-bottom: 10px;
 
 
     </style>
-    <!------navigationbar-->
-    <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="../../static/mydesign.png" ></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
-                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#services">Explore</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Logout <span class="sr-only">(current)</span></a>
-                </li>
             
 </ul>
     </section>
@@ -260,6 +244,10 @@ padding-bottom: 10px;
                  software development talent and it works well on a
                  wide range of operating systems and IDEs (Integrated 
                 Development Environments).</p>
+                {% for row in rows %}
+                    {{row.content}}
+                {% endfor %}
+
               <a href="../../static/gittutorial.pdf">Step by Step Guide</a>&nbsp;<a href="Compiler.html">Try & Run</a>
             </div>
 
@@ -353,6 +341,6 @@ padding-bottom: 10px;
       </script>
 
 </body>
-{% block content %}
-    {{ java }}
+
+
 {% endblock %}
