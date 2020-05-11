@@ -1,4 +1,338 @@
 {% extends "base.html" %}
+<body>
+    <style>
+        *
+{
+    margin:0;
+    padding:0;
+
+}
+/*----navigation----*/
+#nav-bar
+{
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 30px;
+}
+
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+
+}
+#nav-bar ul li a:hover
+{
+    color: black!important;
+    font-weight: bold;
+}
+.navbar
+{
+    background: white;
+}
+.navbar-toggler
+{
+    border:none!important;
+}
+.nav-link
+{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+/*---Services---*/
+#services
+{
+    background-image: linear-gradient(rgba(27, 25, 25, 0.8),rgba(117, 108, 108, 0.8)),url(../../static/footer.png);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1
+{
+text-align: center;
+color: #efefef !important;
+padding-bottom: 10px;
+}
+#services h1::after
+{
+  content: '';
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.services
+{
+    margin-top: 40px;
+}
+.icon 
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%; 
+}
+#services p
+{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+
+}
+.services .col-md-3:hover{
+    background: #555;
+    cursor: pointer;
+    transition: cubic-bezier(0.77, 0, 0.175, 1);
+
+}
+
+/*---features----*/
+.feature
+{
+    padding: 0px;
+    padding-bottom:50px;
+    margin: 0px 0;
+    background: rgb(231, 231, 231);
+    margin-bottom: 0;
+    
+}
+.feature img
+{
+    margin-top: 100px;
+    margin-left: 30%;
+    max-width: 50%;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+.feature a
+{
+    width: 170px;
+    padding: 15px 10px;
+    display: block;
+    background: #2600d1;
+    text-decoration: none !important;
+    color: #fff !important;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 9px 9px 1px rgba(204,204,204,0.5);
+}
+.feature p{
+    margin-top: 0%;
+    padding-top: 1px;
+}
+/*----promo---*/
+#promo
+{
+    background-image: linear-gradient(rgba(27, 25, 25, 0.8),rgba(117, 108, 108, 0.8)),url(../../static/footer.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+
+/*----Get in Touch----*/
+#contact
+{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    color: #777;
+
+}
+.contact-form
+{
+    text-align: center;
+    padding: 15px;
+    padding-left: 100px;
+    
+}
+.form-control
+{
+    border-radius: 100 !important;
+    border: none !important;
+    
+
+
+}
+::placeholder
+{
+    color: #999 !important;
+}
+/*----footer----*/
+#footer
+{
+    background: #333;
+    color: #fff;
+    padding: 12px;
+}
+.fa-copyright
+{
+    margin: 3px;
+    color:white;
+}
+
+
+
+
+    </style>
+    <!------navigationbar-->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="../../static/mydesign.png" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Explore</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Logout <span class="sr-only">(current)</span></a>
+                </li>
+            
+</ul>
+    </section>
+      
+      <!---feature-->
+      <section class="feature"
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="../../static/py.png">
+            </div>
+            <div class="col-md-6">
+                <img src="../../static/python-logo.png" style="width: 30%;">
+              <p>By far, the most widely used modern
+                version control system in the world today
+                 is Git. Git is a mature, actively maintained
+                 open source project originally developed in 
+                2005 by Linus Torvalds, the famous creator of
+                 the Linux operating system kernel. A staggering
+                 number of software projects rely on Git for 
+                version control, including commercial projects as
+                 well as open source. Developers who have worked
+                 with Git are well represented in the pool of available
+                 software development talent and it works well on a
+                 wide range of operating systems and IDEs (Integrated 
+                Development Environments).</p>
+              <a href="../../static/gittutorial.pdf">Step by Step Guide</a>&nbsp;<a href="Compiler.html">Try & Run</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+        </div>
+      </section></section>
+      <!---services-->
+      <section id="services">
+      <div class="container">
+          <h1>Courses</h1>
+          <div class="row services">
+              <div class="col-md-3 text-center">
+                  <div class="icon">
+                    <a href="github.html"><i class="fa fa-desktop"></i></a>
+                  </div>
+                  <h3>GitHub</h3>
+                  <p>Like this video and ask your question in comment section, and suscribe easy tutorials.</p>
+              </div>
+              <div class="col-md-3 text-center">
+                <div class="icon">
+                  <a href="javascript.html"><i class="fa fa-user"></i></a>
+                </div>
+                <h3>javascript</h3>
+                <p>Like this video and ask your question in comment section, and suscribe easy tutorials.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="icon">
+                  <a href="python.html"><i class="fa fa-line-chart"></i></a>
+                </div>
+                <h3>Python</h3>
+                <p>Like this video and ask your question in comment section, and suscribe easy tutorials.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="icon">
+                  <a href="sql.html"><i class="fa fa-paint-brush"></i></a>
+                </div>
+                <h3>SQL</h3>
+                <p>Like this video and ask your question in comment section, and suscribe easy tutorials.</p>
+            </div>
+          </div>
+      </div>
+      </section>
+      <!---promo-->
+      <section id="promo">
+        <div class="container">
+          <p>For more links and tutorial</p>
+          <a href="#contact" class="btn btn-primary">contact us</a>
+        </div>
+      </section>
+    
+      <!---get in touch-->
+      <section id="contact">
+        <div class="container">
+          <h1>Get In Touch</h1>
+          <div class="row">
+            <div class="col-md-6">
+            <form class="contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" >
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" placeholder="Phone no." >
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email Id" >
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="4" placeholder="Your Message" ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+            </form>
+
+        </div>
+        </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="container text-center">
+          <p><i class="fa fa-copyright" aria-hidden="true"></i> 2020. Built using VSCode</p>
+        </div>
+      </section>
+      <!---footer end-->
+      <script src="js/smooth-scroll.js"></script>
+      <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+      </script>
+
+</body>
 
 {% block content %}
     {{ python }}
