@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST">
+    {% if current_user.has_role("Admin") %}
+        <p>Hello Admin</p>
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+        {{ form.python.label }}
+        {{ form.python }}
+        </div>
+        <div class="form-group">
+        {{ form.github.label }}
+        {{ form.github }}
+        </div>
+        <div class="form-group">
+        {{ form.java.label }}
+        {{ form.java }}
+        </div>
+        {{ form.submit }}
+    {% endif %}
+</form>
+{% endblock %}

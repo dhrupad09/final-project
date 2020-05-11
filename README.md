@@ -2,8 +2,8 @@
 ## Final Project
 ### Team Name: DataPirates
 #### Team member
-1. Rohit Kabra
-2. Dhrupad Solanki
+1. Dhrupad Solanki
+2. Rohit Kabra
 3. Brij Bhushan Thota
 4. Ajay Kumar Selvaraj Rajagopal
 #### Project Name: Techademy
@@ -12,21 +12,21 @@ Techademy is a web blog page that gives a detailed description and a step by ste
 
 
 ## Feature
-- [X] User can register a new account with a unique email address
+- [X] User can register a new account with a unique email address.
 
-- [X] User can login with a valid email address and password
+- [X] User can login with a valid email address and password.
 
-- [X] User passwords should not be stored in plain text
+- [X] User passwords should not be stored in plain text.
 
 - [X] User can create a new password in case he forgets the old one.
 
-- [X] User can logout; their session should be destroyed and the only way back in should be login page
+- [X] User can logout; their session should be destroyed and the only way back in should be login page.
 
 - [X] User can search the topic of their interest.
 
 - [X] User can edit/update their profile.
 
-- [X] User can download the materials 
+- [X] User can download the materials.
 
 - [X] User can try out the tutorials in a compiler.
 
