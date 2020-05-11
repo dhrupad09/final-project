@@ -34,6 +34,6 @@ class User(db.Model, UserMixin):
 class Techademy(db.Model, UserMixin):
     __tablename__ = 'techademy'
     id = db.Column(db.Integer, primary_key=True)
-    python = db.Column(db.Text(1000))
-    github = db.Column(db.Text(1000))
-    java = db.Column(db.Text(1000))
+    category = db.Column(db.Text(1000))
+    title = db.Column(db.Text(1000))
+    content = db.Column(db.Text(1000))
